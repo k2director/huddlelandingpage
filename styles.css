@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section, article, aside, footer, header, nav {
+  display: block;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 1480px;
+}
+
+.fullpage {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+
+/* LOGO */
+
+.heading {
+  margin-top: 65px;
+  margin-bottom: 100px;
+  margin-left: 80px;
+}
+
+.heading img {
+  width: 234px;
+}
+
+
+/* FLEX CONTAINER FOR MOCKUP IMAGE AND TEXT */
+
+.container {
+  margin-left: 80px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.screenshot {
+  flex: 1.3;
+}
+
+
+.textstuff {
+  margin-top: 22px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 37px;
+  color: #FFFEFF;
+  line-height: 1.4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #E1D6E9;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+
+/* BUTTON STUFF */
+
+.myButton {
+  margin-top: 28px;
+  box-shadow: 6px 6px 9px -5px #1f1e1f;
+  background-color: #ffffff;
+  border-radius: 42px;
+  display: inline-block;
+  cursor: pointer;
+  color: hsl(257, 40%, 49%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  padding: 16px 65px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color: #ffffff;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+
+/* SOCIAL ICONS */
+
+.socialcontainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 45px;
+  margin-top: 80px;
+}
+
+.fab {
+  margin: 0 10px;
+}
+
+i.fbook {
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 0.5em 0.7em;
+}
+
+i.twit {
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 0.5em 0.5em;
+}
+
+i.insta {
+  font-size: 22px;
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 0.4em 0.5em;
+}
+
+
+
+
+
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 797px) {
+  body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-mobile.svg");
+    background-size: contain;
+  }
+
+  .fullpage {
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .heading {
+    margin-top: 45px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+  }
+
+  .heading img {
+    width: 180px;
+  }
+
+  .screenshot {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .screenshot img {
+    height: 350px;
+  }
+
+  .textstuff {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 25px;
+  }
+
+  .dumbbutton {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .socialcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-right: 0;
+  }
+}
+
+
+
+
+/* TABLET STYLES */
+
+@media only screen and (min-width: 798px) and (max-width: 1232px) {
+  body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 220%;
+  }
+
+  .fullpage {
+    /* max-width: 920px; */
+    margin: 0 auto;
+  }
+
+  .heading {
+    margin-bottom: 50px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .screenshot {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .screenshot img {
+    width: 650px;
+  }
+
+  .textstuff {
+    flex-basis: 100%;
+    /* display: flex;
+      flex-wrap: wrap; */
+    margin: 0 10px;
+  }
+
+  .dumbbutton {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 37px;
+  }
+
+  .socialcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-right: 0;
+  }
+}
+
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 1233px) {}
