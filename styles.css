@@ -226,13 +226,12 @@ i.insta {
     background-color: hsl(257, 40%, 49%);
     background-image: url("images/bg-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 220%;
+    /* background-size: 1232px; */
   }
 
   .fullpage {
-    /* max-width: 920px; */
-    margin: 0 auto;
-  }
+max-width: 900px;
+margin: 0 auto;}
 
   .heading {
     margin-bottom: 50px;
@@ -253,14 +252,14 @@ i.insta {
   }
 
   .screenshot img {
-    width: 650px;
+  width: 650px;
   }
 
   .textstuff {
     flex-basis: 100%;
     /* display: flex;
       flex-wrap: wrap; */
-    margin: 0 10px;
+    margin: 0 15px;
   }
 
   .dumbbutton {
