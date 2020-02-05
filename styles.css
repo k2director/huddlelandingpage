@@ -148,7 +148,7 @@ i.insta {
 
 /* MOBILE STYLES */
 
-@media only screen and (max-width: 797px) {
+@media only screen and (max-width: 500px) {
   body {
     background-color: hsl(257, 40%, 49%);
     background-image: url("images/bg-mobile.svg");
@@ -156,11 +156,11 @@ i.insta {
   }
 
   .fullpage {
+    width: 375px;
     margin: 0 auto;
   }
 
   .container {
-    width: 500px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -183,8 +183,9 @@ i.insta {
   }
 
   .screenshot img {
-    height: 350px;
+    height: 250px;
   }
+
 
   .textstuff {
     flex-basis: 100%;
@@ -203,7 +204,7 @@ i.insta {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .socialcontainer {
@@ -220,7 +221,7 @@ i.insta {
 
 /* TABLET STYLES */
 
-@media only screen and (min-width: 798px) and (max-width: 1232px) {
+@media only screen and (min-width: 501px) and (max-width: 1232px) {
   body {
     background-color: hsl(257, 40%, 49%);
     background-image: url("images/bg-desktop.svg");
